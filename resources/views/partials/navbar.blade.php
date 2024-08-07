@@ -2,7 +2,7 @@
     <div class="iq-navbar-custom">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
             <div class="iq-navbar-logo d-flex justify-content-between">
-                <a href="{{ route('home') }}">
+                <a href="{{ route('index') }}">
                     <img src="../assets/images/logo.png" class="img-fluid" alt="">
                     <span>TackTick</span>
                 </a>
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  ms-auto navbar-list">
                     <li>
-                        <a href="{{ route('home') }}" class="  d-flex align-items-center">
+                        <a href="{{ route('index') }}" class="  d-flex align-items-center">
                             <i class="ri-home-line"></i>
                         </a>
                     </li>
