@@ -155,9 +155,8 @@
                                 <span class="badge bg-danger float-end">(1)</span>
                                 <div class="ms-auto d-flex">
                                     <h6>All Match</h6>
-                                    <span href="#" class="search-toggle   dropdown-toggle ms-4"
+                                    <span href="#" class="search-toggle   dropdown-toggle ms-2"
                                         id="notification-drop" data-bs-toggle="dropdown">
-                                        <i class="las la-angle-down"></i>
                                     </span>
                                     <div class="sub-drop dropdown-menu" aria-labelledby="notification-drop">
                                         <div class="card shadow-none m-0">
