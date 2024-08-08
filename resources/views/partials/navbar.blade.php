@@ -2,15 +2,34 @@
     <div class="iq-navbar-custom">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
             <div class="iq-navbar-logo d-flex justify-content-between">
-                <a href="{{ route('index') }}">
-                    <img src="../assets/images/logo.png" class="img-fluid" alt="">
-                    <span>TackTick</span>
-                </a>
                 <div class="iq-menu-bt align-self-center">
                     <div class="wrapper-menu">
                         <div class="main-circle"><i class="ri-menu-line"></i></div>
                     </div>
                 </div>
+                <a href="{{ route('index') }}">
+                    <img src="../assets/images/logo.png" class="img-fluid" alt="">
+                    {{-- <span>TackTick</span> --}}
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/matches">Matches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/live-score">Live Score</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/statistics">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ticket">Ticket</a>
+                    </li>
+                </ul>
             </div>
             <div class="iq-search-bar device-search">
                 <form action="#" class="searchbox">
@@ -25,106 +44,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  ms-auto navbar-list">
-                    <li>
-                        <a href="{{ route('index') }}" class="  d-flex align-items-center">
-                            <i class="ri-home-line"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="dropdown-toggle" id="group-drop" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><i class="ri-group-line"></i></a>
-                        <div class="sub-drop sub-drop-large dropdown-menu" aria-labelledby="group-drop">
-                            <div class="card shadow-none m-0">
-                                <div class="card-header d-flex justify-content-between bg-primary">
-                                    <div class="header-title">
-                                        <h5 class="mb-0 text-white">Friend Request</h5>
-                                    </div>
-                                    <small class="badge  bg-light text-dark ">4</small>
-                                </div>
-                                <div class="card-body p-0">
-                                    <div class="iq-friend-request">
-                                        <div
-                                            class="iq-sub-card iq-sub-card-big d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <img class="avatar-40 rounded" src="../assets/images/user/01.jpg"
-                                                    alt="">
-                                                <div class="ms-3">
-                                                    <h6 class="mb-0 ">Jaques Amole</h6>
-                                                    <p class="mb-0">40 friends</p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <a href="javascript:void();"
-                                                    class="me-3 btn btn-primary rounded">Confirm</a>
-                                                <a href="javascript:void();"
-                                                    class="me-3 btn btn-secondary rounded">Delete Request</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="iq-friend-request">
-                                        <div
-                                            class="iq-sub-card iq-sub-card-big d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <img class="avatar-40 rounded" src="../assets/images/user/02.jpg"
-                                                    alt="">
-                                                <div class="ms-3">
-                                                    <h6 class="mb-0 ">Lucy Tania</h6>
-                                                    <p class="mb-0">12 friends</p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <a href="javascript:void();"
-                                                    class="me-3 btn btn-primary rounded">Confirm</a>
-                                                <a href="javascript:void();"
-                                                    class="me-3 btn btn-secondary rounded">Delete Request</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="iq-friend-request">
-                                        <div
-                                            class="iq-sub-card iq-sub-card-big d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <img class="avatar-40 rounded" src="../assets/images/user/03.jpg"
-                                                    alt="">
-                                                <div class=" ms-3">
-                                                    <h6 class="mb-0 ">Manny Petty</h6>
-                                                    <p class="mb-0">3 friends</p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <a href="javascript:void();"
-                                                    class="me-3 btn btn-primary rounded">Confirm</a>
-                                                <a href="javascript:void();"
-                                                    class="me-3 btn btn-secondary rounded">Delete Request</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="iq-friend-request">
-                                        <div
-                                            class="iq-sub-card iq-sub-card-big d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <img class="avatar-40 rounded" src="../assets/images/user/04.jpg"
-                                                    alt="">
-                                                <div class="ms-3">
-                                                    <h6 class="mb-0 ">Marsha Mello</h6>
-                                                    <p class="mb-0">15 friends</p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <a href="javascript:void();"
-                                                    class="me-3 btn btn-primary rounded">Confirm</a>
-                                                <a href="javascript:void();"
-                                                    class="me-3 btn btn-secondary rounded">Delete Request</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <a href="#" class=" btn text-primary">View More Request</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="search-toggle   dropdown-toggle" id="notification-drop"
                             data-bs-toggle="dropdown">
@@ -203,7 +122,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    {{-- <li class="nav-item dropdown">
                         <a href="#" class="dropdown-toggle" id="mail-drop" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <i class="ri-mail-line"></i>
@@ -280,6 +199,56 @@
                                 </div>
                             </div>
                         </div>
+                    </li> --}}
+                    <li class="nav-item dropdown">
+                        <a href="#" class="search-toggle   dropdown-toggle" id="notification-drop"
+                            data-bs-toggle="dropdown">
+                            <i class="ri-heart-line"></i>
+                        </a>
+                        <div class="sub-drop dropdown-menu" aria-labelledby="notification-drop">
+                            <div class="card shadow-none m-0">
+                                <div class="card-header d-flex justify-content-between bg-primary">
+                                    <div class="header-title bg-primary">
+                                        <h5 class="mb-0 text-white">All Favorite</h5>
+                                    </div>
+                                    <small class="badge  bg-light text-dark">3</small>
+                                </div>
+                                <div class="card-body p-0">
+                                    <a href="#" class="iq-sub-card">
+                                        <div class="d-flex align-items-center">
+                                            <div class="">
+                                                <img class="avatar-40 rounded" src="../assets/images/user/01.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="ms-3 w-100">
+                                                <h6 class="mb-0 ">Data Judul</h6>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0">Data deskripsi</p>
+                                                    <small class="float-right font-size-12">Data deskripsi
+                                                        kecil</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="iq-sub-card">
+                                        <div class="d-flex align-items-center">
+                                            <div class="">
+                                                <img class="avatar-40 rounded" src="../assets/images/user/01.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="ms-3 w-100">
+                                                <h6 class="mb-0 ">Data Judul</h6>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="mb-0">Data deskripsi</p>
+                                                    <small class="float-right font-size-12">Data deskripsi
+                                                        kecil</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="   d-flex align-items-center dropdown-toggle" id="drop-down-arrow"
@@ -287,7 +256,9 @@
                             <img src="../assets/images/user/1.jpg" class="img-fluid rounded-circle me-3"
                                 alt="user">
                             <div class="caption">
-                                <h6 class="mb-0 line-height">User Log in</h6>
+                                <h6 class="mb-0 line-height">John Doe</h6>
+                                {{-- <p>Football Lovers</p> --}}
+                                <h6 class="float-left font-size-12">Football lovers</h6>
                             </div>
                         </a>
                         <div class="sub-drop dropdown-menu caption-menu" aria-labelledby="drop-down-arrow">
