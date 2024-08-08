@@ -5847,7 +5847,7 @@ fieldset:disabled .btn {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 1.25rem 1.25rem
+    padding: 0.75rem 0.75rem
 }
 
 .card-title {
@@ -14101,7 +14101,7 @@ fieldset:disabled .btn {
 }
 
 .iq-search-bar .searchbox {
-    width: 30rem;
+    width: 26rem;
     position: relative
 }
 
@@ -14288,7 +14288,7 @@ fieldset:disabled .btn {
 
 @media (max-width:1199.98px) {
     .iq-search-bar .searchbox {
-        width: 21.875rem
+        width: 10rem
     }
 
     .iq-top-navbar {
@@ -15348,7 +15348,7 @@ body.sidebar-main .iq-menu-bt-sidebar .iq-menu-bt {
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 62.5rem
+        max-width: 70rem
     }
 }
 
