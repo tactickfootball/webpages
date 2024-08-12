@@ -10,10 +10,6 @@ Route::get('/coming-soon', function () {
     return view('pages.coming-soon');
 })->name('coming-soon');
 
-Route::get('/home', function () {
-    return view('pages.home');
-})->name('home');
-
 Route::get('/login', function () {
     return view('auth.login');
 });
@@ -23,7 +19,7 @@ Route::get('/register', function () {
 });
 
 Route::get('/matches', function () {
-    return view('pages.matches');
+    return view('pages.match');
 });
 
 Route::get('/match-detail', function () {
@@ -38,9 +34,49 @@ Route::get('/statistics', function () {
     return view('pages.statistics');
 });
 
+Route::get('/profile', function () {
+    return view('pages.profile');
+})->name('profile');
+
+Route::get('/favorite', function () {
+    return view('pages.favorite');
+})->name('favorite');
+
+Route::get('/home', function () {
+    return view('pages.home');
+})->name('home');
+
 Route::get('/ticket', function () {
     return view('pages.ticket');
 });
+
+Route::get('/video', function () {
+    return view('pages.video');
+});
+
+Route::get('/newspaper', function () {
+    return view('pages.newspaper');
+});
+
+Route::get('/chat', function () {
+    return view('pages.chat');
+})->name('chat');
+
+Route::get('/game', function () {
+    return view('pages.game');
+})->name('game');
+
+Route::get('/store', function () {
+    return view('pages.store');
+})->name('store');
+
+Route::get('/ai', function () {
+    return view('pages.ai');
+})->name('ai');
+
+Route::get('/setting', function () {
+    return view('pages.setting');
+})->name('setting');
 
 Route::get('/personal-data', function () {
     return view('pages.personal-data');
