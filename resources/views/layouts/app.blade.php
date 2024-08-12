@@ -5,24 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@yield('title')</title>
-    {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-    {{-- <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
-    <link rel="stylesheet" href="{{ asset('css/libs.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/socialv.css?v=4.0.0') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/@fortawesome/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/remixicon/fonts/remixicon.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/vanillajs-datepicker/dist/css/datepicker.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/font-awesome-line-awesome/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css') }}"> --}}
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-    <link rel="stylesheet" href="../assets/css/libs.min.css">
-    <link rel="stylesheet" href="../assets/css/socialv.css?v=4.0.0">
-    <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
-    <link rel="stylesheet" href="../assets/vendor/vanillajs-datepicker/dist/css/datepicker.min.css">
-    <link rel="stylesheet" href="../assets/vendor/font-awesome-line-awesome/css/all.min.css">
-    <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/libs.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/socialv.css?v=4.0.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/remixicon/fonts/remixicon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/vanillajs-datepicker/dist/css/datepicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome-line-awesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css') }}">
 </head>
 
 <body class="  ">
