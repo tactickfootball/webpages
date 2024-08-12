@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\App;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,5 +26,9 @@ class AppServiceProvider extends ServiceProvider
         Blade::component('components.modal', 'modal');
         Blade::component('components.form', 'form');
         Blade::component('components.card', 'card');
+        //
+        if (App::environment('production')) {
+            URL::forceScheme('https');
+        }
     }
 }
