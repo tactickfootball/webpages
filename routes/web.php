@@ -19,20 +19,20 @@ Route::get('/register', function () {
 });
 
 Route::get('/matches', function () {
-    return view('pages.match');
-});
+    return view('pages.matches');
+})->name('matches');
 
 Route::get('/match-detail', function () {
     return view('pages.match-detail');
-});
+})->name('match-detail');
 
 Route::get('/live-score', function () {
     return view('pages.live-score');
-});
+})->name('live-score');
 
 Route::get('/statistics', function () {
     return view('pages.statistics');
-});
+})->name('statistics');
 
 Route::get('/profile', function () {
     return view('pages.profile');
@@ -46,17 +46,21 @@ Route::get('/home', function () {
     return view('pages.home');
 })->name('home');
 
-Route::get('/ticket', function () {
-    return view('pages.ticket');
-});
+Route::get('/tickets', function () {
+    return view('pages.tickets');
+})->name('tickets');
+
+Route::get('/ticket/buy', function () {
+    return view('pages.ticket-buy');
+})->name('ticket-buy');
 
 Route::get('/video', function () {
     return view('pages.video');
-});
+})->name('video');
 
 Route::get('/newspaper', function () {
     return view('pages.newspaper');
-});
+})->name('newspaper');
 
 Route::get('/chat', function () {
     return view('pages.chat');
@@ -78,13 +82,13 @@ Route::get('/setting', function () {
     return view('pages.setting');
 })->name('setting');
 
-Route::get('/personal-data', function () {
+Route::get('/user/personal-data', function () {
     return view('pages.personal-data');
-});
+})->name('personal-data');
 
-Route::get('/payment', function () {
+Route::get('/user/payment', function () {
     return view('pages.payment');
-});
+})->name('payment');
 
 Route::get('/faqs', function () {
     return view('pages.faqs');
@@ -94,18 +98,15 @@ Route::get('/privacy-policy', function () {
     return view('pages.privacy-policy');
 })->name('privacy-policy');
 
-// Route::get('/terms-and-conditions', function () {
-//     return view('pages.terms-and-conditions');
-// });
 
 Route::get('/groups', function () {
     return view('pages.groups');
-});
+})->name('groups');
 
 Route::get('/group-detail', function () {
     return view('pages.group-detail');
-});
+})->name('group-detail');
 
-Route::get('/invoice', function () {
+Route::get('/user/invoice', function () {
     return view('pages.invoice');
-});
+})->name('invoice');

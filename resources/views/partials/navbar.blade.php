@@ -13,27 +13,27 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <!-- <li class="nav-item active">
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/matches">Matches</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="/live-score">Live Score</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/statistics">Statistics</a>
+                        <a class="nav-link" href="{{ route('matches') }}">Matches</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ticket">Ticket</a>
+                        <a class="nav-link" href="{{ route('live-score') }}">Live Score</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('statistics') }}">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('tickets') }}">Tickets</a>
                     </li>
                 </ul>
             </div>
             <div class="iq-search-bar device-search">
                 <form action="#" class="searchbox">
                     <a class="search-link" href="#"><i class="ri-search-line"></i></a>
-                    <input type="text" class="text search-input" placeholder="Search here...">
+                    <input type="text" class="text search-input" placeholder="Search Matches, Players, Stats ...">
                 </form>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
