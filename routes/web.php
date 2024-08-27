@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TicketController;
 
 Route::get('/', function () {
     return view('pages.index');
@@ -46,9 +47,15 @@ Route::get('/home', function () {
     return view('pages.home');
 })->name('home');
 
+Route::get('/liga', function () {
+    return view('pages.liga');
+})->name('liga');
+
 Route::get('/tickets', function () {
     return view('pages.tickets');
 })->name('tickets');
+
+Route::get('/ticket-detail', [TicketController::class, 'showDetail'])->name('ticket-detail');
 
 Route::get('/ticket/buy', function () {
     return view('pages.ticket-buy');

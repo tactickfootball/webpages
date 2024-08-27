@@ -410,26 +410,32 @@
                                 </a>
                             </div>
                             <div class="col-12">
-                                <img src="../assets/images/page-img/08.jpg" class="card-img" alt="#">
+                                <img src="../assets/images/trending/Rectangle 11.png" class="card-img" alt="#" style="max-width: 100%; max-height: 200px;">
                                 <div class="card-body">
-                                    <h4 class="card-title">Card title <span class="float-end"><i
-                                                class="ri-bookmark-fill"></i></span></h4>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in. a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <h5 class="card-title">Results and scores from the Premier League....!!</h5>
+                                    <p class="card-text"><small class="text-muted">Admin - 3 mins ago</small></p>
                                 </div>
                             </div>
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img src="../assets/images/page-img/08.jpg" class="card-img" alt="#">
+                                    <img src="../assets/images/trending/Rectangle 12.png" class="card-img" alt="#">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title <span class="float-end"><i
-                                                    class="ri-bookmark-line"></i></span></h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in. a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        <h6 class="card-title">Here are the top 100 players and managers</h6>
+                                        <p class="card-text"><small class="text-muted">Admin - 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                        <img src="../assets/images/trending/Rectangle 13.png" class="card-img" alt="#">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h6 class="card-title">IShowSpeed Scored a Hattrick</h6>
+                                        <p class="card-text"><small class="text-muted">Admin - 3 mins ago</small>
                                         </p>
                                     </div>
                                 </div>
@@ -440,11 +446,8 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title <span class="float-end"><i
-                                                    class="ri-bookmark-line"></i></span></h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in. a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        <h6 class="card-title">Join or start a competition now!</h6>
+                                        <p class="card-text"><small class="text-muted">Admin - 3 mins ago</small>
                                         </p>
                                     </div>
                                 </div>
@@ -455,16 +458,12 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title <span class="float-end"><i
-                                                    class="ri-bookmark-line"></i></span></h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in. a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        <h6 class="card-title">Manchester City Relegated</h6>
+                                        <p class="card-text"><small class="text-muted">Admin - 3 mins ago</small>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
