@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="/ticket" class=" ">
+                    <a href="/tickets" class=" ">
                         <i class="ri-coupon-3-line"></i><span>Ticket</span>
                     </a>
                 </li>

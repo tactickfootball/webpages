@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-plain')
 
 @section('title', 'Tactick - Ticket')
 
@@ -98,7 +98,7 @@
                                             </div>
                                         </td>
                                         <td class="col-lg-2">
-                                            <button type="submit" class="btn btn-primary">Buy</button>
+                                            <a href="{{ route('ticket-detail') }}" class="btn btn-primary">Buy</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -128,7 +128,7 @@
                                             </div>
                                         </td>
                                         <td class="col-lg-2">
-                                            <button type="submit" class="btn btn-primary">Buy</button>
+                                            <a href="{{ route('ticket-detail') }}" class="btn btn-primary">Buy</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -158,7 +158,7 @@
                                             </div>
                                         </td>
                                         <td class="col-lg-2">
-                                            <button type="submit" class="btn btn-primary">Buy</button>
+                                            <a href="{{ route('ticket-detail') }}" class="btn btn-primary">Buy</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -188,7 +188,7 @@
                                             </div>
                                         </td>
                                         <td class="col-lg-2">
-                                            <button type="submit" class="btn btn-primary">Buy</button>
+                                            <a href="{{ route('ticket-detail') }}" class="btn btn-primary">Buy</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -218,7 +218,7 @@
                                             </div>
                                         </td>
                                         <td class="col-lg-2">
-                                            <button type="submit" class="btn btn-primary">Buy</button>
+                                            <a href="{{ route('ticket-detail') }}" class="btn btn-primary">Buy</a>
                                         </td>
                                     </tr>
                                 </tbody>

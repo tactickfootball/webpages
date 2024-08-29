@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.app-plain')
 
-@section('title', 'Tactick - Detail Ticket')
+@section('title', 'TacTick - Detail Ticket')
 
 @section('content')
 <!-- Page Content  -->
@@ -46,27 +46,31 @@
                         <div class="row mb-3">
                             <div class="col-sm-10">
                                 <div class="form-check d-block">
-                                    <button type="button" class="btn btn-outline-primary w-25" onclick="document.getElementById('tribunUtara').click();">
+                                    <button type="button" class="btn btn-outline-primary w-75" onclick="document.getElementById('tribunUtara').click();">
                                         <input class="form-check-input" type="radio" name="tribun" id="tribunUtara" value="utara">
-                                        Tribun Utara
+                                        Tribun Utara<br>
+                                        Rp 25.000/Tiket
                                     </button>
                                 </div>
                                 <div class="form-check d-block">
-                                    <button type="button" class="btn btn-outline-primary w-25" onclick="document.getElementById('tribunUtara').click();">
+                                    <button type="button" class="btn btn-outline-primary w-75" onclick="document.getElementById('tribunUtara').click();">
                                         <input class="form-check-input" type="radio" name="tribun" id="tribunUtara" value="utara">
-                                        Tribun Timur
+                                        Tribun Timur<br>
+                                        Rp 50.000/Tiket
                                     </button>
                                 </div>
                                 <div class="form-check d-block">
-                                    <button type="button" class="btn btn-outline-primary w-25" onclick="document.getElementById('tribunUtara').click();">
+                                    <button type="button" class="btn btn-outline-primary w-75" onclick="document.getElementById('tribunUtara').click();">
                                         <input class="form-check-input" type="radio" name="tribun" id="tribunUtara" value="utara">
-                                        Tribun Selatan
+                                        Tribun Selatan<br>
+                                        Rp 25.000/Tiket
                                     </button>
                                 </div>
                                 <div class="form-check d-block">
-                                    <button type="button" class="btn btn-outline-primary w-25" onclick="document.getElementById('tribunUtara').click();">
+                                    <button type="button" class="btn btn-outline-primary w-75" onclick="document.getElementById('tribunUtara').click();">
                                         <input class="form-check-input" type="radio" name="tribun" id="tribunUtara" value="utara">
-                                        Tribun Barat
+                                        Tribun Barat<br>
+                                        Rp 100.000/Tiket
                                     </button>
                                 </div>
                             </div>
