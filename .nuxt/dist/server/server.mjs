@@ -1,0 +1,1 @@
+export { default } from "file:///home/shuya/Documents/Projects/tactick/webpages/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
