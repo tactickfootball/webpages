@@ -15,7 +15,7 @@
                         <a class="nav-link" href="{{ route('matches') }}">Pertandingan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tickets') }}">Tiket</a>
+                        <a class="nav-link" href="{{ route('index') }}">Tiket</a>
                     </li>
                 </ul>
             </div>
@@ -163,7 +163,8 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="   d-flex align-items-center dropdown-toggle" id="drop-down-arrow"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="../assets/images/user/1.jpg" class="img-fluid rounded-circle me-3" alt="user">
+                            <img src="../assets/images/user/1.jpg" class="img-fluid rounded-circle me-3"
+                                alt="user">
                             <div class="caption">
                                 <h6 class="mb-0 line-height">John Doe</h6>
                                 <h6 class="float-left font-size-12">Football lovers</h6>
