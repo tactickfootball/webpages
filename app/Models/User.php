@@ -6,6 +6,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Ramsey\Uuid\Uuid;
 
 class User extends Authenticatable
 {
@@ -43,5 +44,39 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        // Automatically generate a UUID when creating a new record
+        static::creating(function ($model) {
+            if (empty($model->uuid)) {
+                $model->uuid = Uuid::uuid4()->getBytes();
+            }
+        });
+    }
+
+    /**
+     * Get the UUID attribute.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public function getUuidAttribute($value)
+    {
+        return Uuid::fromBytes($value)->toString();
+    }
+
+    /**
+     * Set the UUID attribute.
+     *
+     * @param  string  $value
+     * @return void
+     */
+    public function setUuidAttribute($value)
+    {
+        $this->attributes['uuid'] = Uuid::fromString($value)->getBytes();
     }
 }
