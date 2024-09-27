@@ -111,14 +111,45 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Metode Pembayaran</h4>
-                            <div class="form-check d-block">
-                                <button type="button" class="btn btn-outline-primary w-100" onclick="document.getElementById('tribunUtara').click();">
+                        <div class="card mb-3 ">
+                            <div class="card-body btn btn-outline-primary text-start p-2" >
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" >
+                                <label class="form-check-label" for="paypal">
+                                    Paypal
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 ">
+                            <div class="card-body btn btn-outline-primary text-start p-2" >
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" >
+                                <label class="form-check-label" for="paypal">
+                                    Google Pay
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 ">
+                            <div class="card-body btn btn-outline-primary text-start p-2" >
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" >
+                                <label class="form-check-label" for="paypal">
+                                    QRIS
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div>
+                            <div class="form-check d-block w-full relative">
+                                <button type="button" class="btn btn-outline-primary w-full" ">
                                     <input class="form-check-input" type="radio" name="tribun" id="tribunUtara" value="utara">
                                     Paypal
                                 </button>
                             </div>
                             <div class="form-check d-block">
-                                <button type="button" class="btn btn-outline-primary w-100" onclick="document.getElementById('tribunUtara').click();">
+                                <button type="button" class="btn btn-outline-primary w-full" onclick="document.getElementById('tribunUtara').click();">
                                     <input class="form-check-input" type="radio" name="tribun" id="tribunUtara" value="utara">
                                     Google Pay
                                 </button>
@@ -128,7 +159,7 @@
                                     <input class="form-check-input" type="radio" name="tribun" id="tribunUtara" value="utara">
                                     QRIS
                                 </button>
-                            </div>
+                            </div> -->
                     </div>
                 </div>
                 <div class="card">
