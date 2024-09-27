@@ -196,7 +196,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body p-0">
+                            <div class="card-body p-0 ">
                                 <div class="user-tabing">
                                     <ul
                                         class="nav nav-pills d-flex align-items-center justify-content-center profile-feed-items p-0 m-0">
