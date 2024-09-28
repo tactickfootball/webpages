@@ -17,25 +17,25 @@
                         <div class="row mb-3">
                             <label for="nik" class="col-sm-2 col-form-label">NIK</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="nik" value="3578xxxxxxxx" readonly>
+                                <input type="text" class="form-control" id="nik" value="3578xxxxxxxx">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="nama" value="Nama Lengkap" readonly>
+                                <input type="text" class="form-control" id="nama" value="Nama Lengkap">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="nomor_hp" class="col-sm-2 col-form-label">Nomor HP</label>
                             <div class="col-sm-10">
-                                <input type="number" class="form-control" id="nomor_hp" value="62-xxx-xxxx-xxxx" readonly>
+                                <input type="number" class="form-control" id="nomor_hp" value="62-xxx-xxxx-xxxx">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="email" class="col-sm-2 col-form-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" value="admin@tac.tick" readonly>
+                                <input type="email" class="form-control" id="email" value="admin@tac.tick">
                             </div>
                         </div>
                     </div>
@@ -81,27 +81,15 @@
                     <div class="card-body">
                         <h4 class="card-title">Pilih Tiket</h4>
                         <div class="row mb-0">
-                            <div class="col-sm-1">
-
-                            </div>
-                            <div class="col-sm-4">Jenis Tiket</div>
                             <div class="col-sm-4">Jumlah Tiket</div>
                         </div>
-                        <div class="row mb-3">
-                            <label for="tribun" class="col-sm-1 col-form-label"></label>
-                            <div class="col-sm-4">
-                                <select class="form-select" id="tribun">
-                                    <option value="utara">Pilih Jenis Tiket</option>
-                                    <option value="timur">A</option>
-                                    <option value="selatan">B</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-4">
-                                <select class="form-select" id="tribun">
-                                    <option value="utara">Pilih Jumlah Tiket</option>
-                                    <option value="timur">A</option>
-                                    <option value="selatan">B</option>
-                                </select>
+                        <div class="row mb-1">
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <button class="btn btn-primary btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
+                                    <input type="number" id="qtyInput" class="form-control form-control-sm text-center" min="1" value="0" />
+                                    <button class="btn btn-primary btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -111,31 +99,34 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Metode Pembayaran</h4>
-                        <div class="card mb-3 ">
-                            <div class="card-body btn btn-outline-primary text-start p-2" >
-                                <div class="form-check">
+                        <div class="card mb-3">
+                            <div class="card-body btn btn-outline-primary text-start p-2 " onclick="document.getElementById('paypal').checked = true;" >
+                                <div class="form-check d-flex align-items-center">
                                 <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" >
+                                <img src="./assets/images/method-logo/paypal-logo.png" alt="Paypal" class="img-fluid" style="margin: 0px 5px 0px 10px; width: 50px;">
                                 <label class="form-check-label" for="paypal">
                                     Paypal
                                 </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3 ">
-                            <div class="card-body btn btn-outline-primary text-start p-2" >
-                                <div class="form-check">
-                                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" >
-                                <label class="form-check-label" for="paypal">
+                        <div class="card mb-3">
+                            <div class="card-body btn btn-outline-primary text-start p-2" onclick="document.getElementById('googlepay').checked = true;" >
+                                <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="googlepay" value="googlepay" >
+                                <img src="./assets/images/method-logo/google-pay-logo.png" alt="googlepay" class="img-fluid" style="margin: 0px 5px 0px 10px;width: 50px;">
+                                <label class="form-check-label" for="googlepay">
                                     Google Pay
                                 </label>
                                 </div>
                             </div>
                         </div>
                         <div class="card mb-3 ">
-                            <div class="card-body btn btn-outline-primary text-start p-2" >
-                                <div class="form-check">
-                                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" >
-                                <label class="form-check-label" for="paypal">
+                            <div class="card-body btn btn-outline-primary text-start p-2" onclick="document.getElementById('qris').checked = true;">
+                                <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="qris" value="qris" >
+                                <img src="./assets/images/method-logo/qris-logo.png" alt="qris" class="img-fluid" style="margin: 0px 5px 0px 10px; width: 50px;">
+                                <label class="form-check-label" for="qris">
                                     QRIS
                                 </label>
                                 </div>
