@@ -10,37 +10,56 @@
             <div class="col-lg-12">
                 @include('partials.breadcrumb')
             </div>
-            <div class="col-lg-8">
+            <div>
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Informasi Data Diri</h4>
                         <div class="row mb-3">
                             <label for="nik" class="col-sm-2 col-form-label">NIK</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="nik" value="3578xxxxxxxx">
+                                <input type="text" class="form-control" id="nik" placeholder="3578xxxxxxxx" value="">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="nama" value="Nama Lengkap">
+                                <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" value="">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="nomor_hp" class="col-sm-2 col-form-label">Nomor HP</label>
                             <div class="col-sm-10">
-                                <input type="number" class="form-control" id="nomor_hp" value="62-xxx-xxxx-xxxx">
+                                <input type="text" class="form-control" id="nomor_hp" placeholder="xxxx-xxx-xxxx-xxxx" value="">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="email" class="col-sm-2 col-form-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" value="admin@tac.tick">
+                                <input type="email" class="form-control" id="email" placeholder="nama@gmail.com" value="">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="tanggallahir" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="email" placeholder="mm/dd/yyyy" value="">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                            <div class="col-sm-5 d-flex align-items-md-center">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                    <label class="form-check-label" for="male">Laki-laki</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                    <label class="form-check-label" for="female">Perempuan</label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                {{-- <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Informasi Tempat Duduk</h4>
                         <div class="row mb-3">
@@ -76,8 +95,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </div> --}}
+                {{-- <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Pilih Tiket</h4>
                         <div class="row mb-0">
@@ -93,9 +112,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
-            <div class="col-lg-4">
+            {{-- <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Metode Pembayaran</h4>
@@ -156,9 +175,9 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Total</h4>
-                        <div class="row mb-3">
-                            {{-- <label for="total" class="col-sm-6 col-form-label">Rp</label> --}}
-                            <h3 class="col-sm-6">Rp</h3>
+                        <div class="row mb-3 d-flex justify-content-between">
+                            <label for="total" class="col-sm-6 col-form-label">Rp</label>
+                            <h3>Rp</h3>
                             <div class="col-sm-6 text-right">
                                 <h3>100.000</h3>
                             </div>
@@ -168,7 +187,7 @@
                 <div class="card">
                         <button type="button" class="btn btn-primary w-100">Bayar Sekarang</button>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
