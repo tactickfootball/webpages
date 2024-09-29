@@ -59,6 +59,45 @@
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Informasi Tiket</h4>
+                        <div class="row mb-3">
+                            <label for="ticket_type" class="col-sm-2 col-form-label">Tempat Duduk</label>
+                            <div class="col-sm-4">
+                                <select class="form-select" id="ticket_type">
+                                    <option value="tribun utara">Tribun Utara</option>
+                                    <option value="tribun selatan">Tribun Selatan</option>
+                                    <option value="tribun timur">Tribun Timur</option>
+                                    <option value="tribun barat">Tribun Barat</option>
+                                </select>
+                            </div>
+                            <label for="ticket_quantity" class="col-sm-2 col-form-label">Jumlah Tiket</label>
+                            <div class="col-sm-4">
+                                <div class="input-group">
+                                    <button class="btn btn-primary btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
+                                    <input type="number" id="ticket_quantity" class="form-control form-control-sm text-center" min="1" max="2" value="1" />
+                                    <button class="btn btn-primary btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.getElementById('minus-btn').addEventListener('click', function() {
+                                var qtyInput = document.getElementById('ticket_quantity');
+                                var currentValue = parseInt(qtyInput.value);
+                                if (currentValue > 1) {
+                                    qtyInput.value = currentValue - 1;
+                                }
+                            });
+
+                            document.getElementById('plus-btn').addEventListener('click', function() {
+                                var qtyInput = document.getElementById('ticket_quantity');
+                                qtyInput.value = parseInt(qtyInput.value) + 1;
+                            });
+                        </script>
+                    </div>
+                </div>
                 {{-- <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Informasi Tempat Duduk</h4>
