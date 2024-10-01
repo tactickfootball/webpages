@@ -235,7 +235,7 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-12">
-                            <button type="button" class="btn btn-primary w-100">Bayar Sekarang</button>
+                            <a href="{{ route('payment-method') }}" class="btn btn-primary w-100">Bayar Sekarang</a>
                         </div>
                     </div>
                     {{-- <div class="card">
