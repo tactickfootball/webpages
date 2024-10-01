@@ -55,6 +55,10 @@ Route::get('/profile', function () {
 
 Route::get('/ticket-detail', [TicketController::class, 'showDetail'])->name('ticket-detail');
 
+Route::get('/payment-method', function () {
+    return view('pages.payment-method');
+})->name('payment-method');
+
 Route::get('/ticket/buy', function () {
     return view('pages.ticket-buy');
 })->name('ticket-buy');

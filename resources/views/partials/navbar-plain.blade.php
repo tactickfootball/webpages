@@ -1,15 +1,15 @@
-<div class="iq-top-navbar">
+<div class="iq-top-navbar d-flex align-items-center">
     <div class="iq-navbar-custom">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
             <div class="iq-navbar-logo d-flex justify-content-between">
                 <a href="{{ route('index') }}">
                     <img src="../assets/images/logo.png" class="img-fluid" alt="">
-                </a>
-                <div class="iq-menu-bt align-self-center">
+                <div class="align-self-center">
                     <h4>TacTick</h4>
                 </div>
+                </a>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            {{-- <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('matches') }}">Pertandingan</a>
@@ -18,8 +18,8 @@
                         <a class="nav-link" href="{{ route('index') }}">Tiket</a>
                     </li>
                 </ul>
-            </div>
-            <div class="iq-search-bar device-search">
+            </div> --}}
+            {{-- <div class="iq-search-bar device-search">
                 <form action="#" class="searchbox">
                     <a class="search-link" href="#"><i class="ri-search-line"></i></a>
                     <input type="text" class="text search-input" placeholder="Search Matches, Players, Stats ...">
@@ -212,7 +212,7 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div> --}}
         </nav>
     </div>
 </div>

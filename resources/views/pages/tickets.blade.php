@@ -57,7 +57,11 @@
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="col-lg-9">
+=======
+                <div>
+>>>>>>> origin/master-old
                     <div class="card">
                         <div class="card-body">
                             <div class="table-responsive">
@@ -65,12 +69,17 @@
                                     <thead>
                                         <tr>
                                             <th class="text-center">Date</th>
+<<<<<<< HEAD
                                             <th class="text-center">Match</th>
+=======
+                                            <th class="text-start">Match</th>
+>>>>>>> origin/master-old
                                             <th class="text-center"></th>
                                             <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+<<<<<<< HEAD
                                         @foreach ($matches as $match)
                                             <tr>
                                                 <td class="col-lg-2">
@@ -100,21 +109,172 @@
                                                 </td>
                                             </tr>
                                         @endforeach
+=======
+                                        <tr>
+                                            <td class="col-lg-2">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <h6 class="mb-0">17/08/24<br>Sat 21:30</h6>
+                                                    <!-- <p class="mb-0">2 hours, 20 minutes ago</p> -->
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2">
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Manchester-United-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                                VS
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Liverpool-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                            </td>
+                                            <td class="col-lg-5">
+                                                <div class="media-body ms3">
+                                                    <h6 class="mb-0">
+                                                        <p class="mb-0">Manchester United vs Liverpool</p>
+                                                        <p class="text-dark">Premier League</p>
+                                                    </h6>
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2 ">
+                                                <a href="{{ route('ticket-detail') }}" class="btn btn-primary d-flex justify-content-center">Buy</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-lg-2">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <h6 class="mb-0">17/08/24<br>Sat 21:30</h6>
+                                                    <!-- <p class="mb-0">2 hours, 20 minutes ago</p> -->
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2">
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Manchester-United-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                                VS
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Liverpool-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                            </td>
+                                            <td class="col-lg-5">
+                                                <div class="media-body ms3">
+                                                    <h6 class="mb-0">
+                                                        <p class="mb-0">Manchester United vs Liverpool</p>
+                                                        <p class="text-dark">Premier League</p>
+                                                    </h6>
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2 ">
+                                                <a href="{{ route('ticket-detail') }}" class="btn btn-primary d-flex justify-content-center">Buy</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-lg-2">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <h6 class="mb-0">17/08/24<br>Sat 21:30</h6>
+                                                    <!-- <p class="mb-0">2 hours, 20 minutes ago</p> -->
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2">
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Manchester-United-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                                VS
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Liverpool-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                            </td>
+                                            <td class="col-lg-5">
+                                                <div class="media-body ms3">
+                                                    <h6 class="mb-0">
+                                                        <p class="mb-0">Manchester United vs Liverpool</p>
+                                                        <p class="text-dark">Premier League</p>
+                                                    </h6>
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2 ">
+                                                <a href="{{ route('ticket-detail') }}" class="btn btn-primary d-flex justify-content-center">Buy</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-lg-2">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <h6 class="mb-0">17/08/24<br>Sat 21:30</h6>
+                                                    <!-- <p class="mb-0">2 hours, 20 minutes ago</p> -->
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2">
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Manchester-United-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                                VS
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Liverpool-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                            </td>
+                                            <td class="col-lg-5">
+                                                <div class="media-body ms3">
+                                                    <h6 class="mb-0">
+                                                        <p class="mb-0">Manchester United vs Liverpool</p>
+                                                        <p class="text-dark">Premier League</p>
+                                                    </h6>
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2 ">
+                                                <a href="{{ route('ticket-detail') }}" class="btn btn-primary d-flex justify-content-center">Buy</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-lg-2">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <h6 class="mb-0">17/08/24<br>Sat 21:30</h6>
+                                                    <!-- <p class="mb-0">2 hours, 20 minutes ago</p> -->
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2">
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Manchester-United-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                                VS
+                                                <img class="img-fluid rounded-circle avatar-40"
+                                                    src="https://www.footballticketnet.fr/theme/small_logo/Liverpool-Logo-FootballTicketNet.png.webp?cb=7130"
+                                                    alt="">
+                                            </td>
+                                            <td class="col-lg-5">
+                                                <div class="media-body ms3">
+                                                    <h6 class="mb-0">
+                                                        <p class="mb-0">Manchester United vs Liverpool</p>
+                                                        <p class="text-dark">Premier League</p>
+                                                    </h6>
+                                                </div>
+                                            </td>
+                                            <td class="col-lg-2 ">
+                                                <a href="{{ route('ticket-detail') }}" class="btn btn-primary d-flex justify-content-center">Buy</a>
+                                            </td>
+                                        </tr>
+>>>>>>> origin/master-old
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="col-lg-3">
                     <div class="card">
                         <div class="card-body">
                             <div class="input-group">
                                 <div class="vanila-datepicker"></div>
                             </div>
+=======
+                {{-- <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="input-group">
+                            <div class="vanila-datepicker"></div>
+>>>>>>> origin/master-old
                         </div>
                     </div>
                 </div>
+            </div> --}}
             </div>
         </div>
     </div>
