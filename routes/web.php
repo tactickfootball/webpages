@@ -3,10 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TicketController;
 
-Route::get('/', function () {
-    // return view('pages.index');
-    return view('pages.tickets');
-})->name('index');
+Route::get('/', [TicketController::class, 'showTickets'])->name('index');
 
 Route::get('/coming-soon', function () {
     return view('pages.coming-soon');

@@ -9,6 +9,9 @@ use Ramsey\Uuid\Uuid;
 class Club extends Model
 {
     use HasFactory;
+    protected $fillable = ['id', 'name', 'logo', 'description']; // Replace with actual fields
+
+    protected $table = 'clubs';
 
     protected static function boot()
     {
