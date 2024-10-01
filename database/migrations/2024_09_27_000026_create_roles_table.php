@@ -15,7 +15,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('roles', function (Blueprint $table) {
-            $table->binary('uuid', 36)->primary();
+            $table->id();
             $table->enum('role', ['admin', 'customer'])->default('customer');
             $table->string('description')->nullable();
             $table->timestamps();

@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('mitra', function (Blueprint $table) {
-            $table->binary('uuid', 36)->primary();
+            $table->id();
             $table->string('name', 50);
             $table->string('description', 255)->nullable();
             $table->decimal('rating', 2, 1)->default(5);
