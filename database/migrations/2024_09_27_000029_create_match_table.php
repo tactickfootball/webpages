@@ -17,9 +17,9 @@ return new class extends Migration
             $table->date('date');
             $table->integer('total_available_ticket');
             $table->string('description', 255);
-            $table->binary('mitra_id', 36);
-            $table->binary('club_1_id', 36);
-            $table->binary('club_2_id', 36);
+            $table->unsignedBigInteger('mitra_id');
+            $table->unsignedBigInteger('club_1_id');
+            $table->unsignedBigInteger('club_2_id');
             $table->timestamps();
 
             // Foreign key constraints 

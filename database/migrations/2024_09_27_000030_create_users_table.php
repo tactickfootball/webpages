@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->binary('role_id', 36); // Default role is customer
+            $table->unsignedBigInteger('role_id'); // Default role is customer
             $table->date('registration_date');
             $table->integer('nik');
             $table->string('email')->unique();
