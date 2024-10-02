@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tickets', function (Blueprint $table) {
-            $table->binary('uuid', 36)->primary();
-            $table->binary('user_uuid', 36);
-            $table->binary('match_uuid', 36);
-            $table->binary('seat_uuid', 36);
-            $table->binary('payment_uuid', 36);
+            $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('match_id');
+            $table->unsignedBigInteger('seat_id');
+            $table->unsignedBigInteger('payment_id');
 
             $table->integer('num_tickets')->check('num_tickets <= 2');
             $table->integer('amount');
@@ -29,10 +29,10 @@ return new class extends Migration
             $table->timestamps();
 
             // Foreign key constraints
-            $table->foreign('user_uuid')->references('uuid')->on('users')->onDelete('cascade');
-            $table->foreign('match_uuid')->references('uuid')->on('matches')->onDelete('cascade');
-            $table->foreign('seat_uuid')->references('uuid')->on('seats')->onDelete('cascade');
-            $table->foreign('payment_uuid')->references('uuid')->on('payments')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('match_id')->references('id')->on('matches')->onDelete('cascade');
+            $table->foreign('seat_id')->references('id')->on('seats')->onDelete('cascade');
+            $table->foreign('payment_id')->references('id')->on('payments')->onDelete('cascade');
         });
     }
 

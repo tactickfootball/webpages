@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->binary('uuid', 36)->primary();
-            $table->binary('role_uuid', 36); // Default role is customer
+            $table->id();
+            $table->unsignedBigInteger('role_id'); // Default role is customer
             $table->date('registration_date');
             $table->integer('nik');
             $table->string('email')->unique();
@@ -25,7 +25,7 @@ return new class extends Migration
             $table->timestamps();
 
             // Foreign key constraint
-            $table->foreign('role_uuid')->references('uuid')->on('roles')->onDelete('cascade');
+            $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {

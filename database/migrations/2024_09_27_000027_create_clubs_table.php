@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('club', function (Blueprint $table) {
-            $table->binary('uuid', 36)->primary();
+        Schema::create('clubs', function (Blueprint $table) {
+            $table->id();
             $table->string('name');
             $table->string('logo', 255);
             $table->string('description', 255);
@@ -26,7 +26,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('club', function (Blueprint $table) {
+        Schema::table('clubs', function (Blueprint $table) {
             //
         });
     }

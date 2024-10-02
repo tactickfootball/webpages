@@ -12,20 +12,20 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('matches', function (Blueprint $table) {
-            $table->binary('uuid', 36)->primary();
+            $table->id();
             $table->string('name', 100);
             $table->date('date');
             $table->integer('total_available_ticket');
             $table->string('description', 255);
-            $table->binary('mitra_uuid', 36);
-            $table->binary('club_1_uuid', 36);
-            $table->binary('club_2_uuid', 36);
+            $table->unsignedBigInteger('mitra_id');
+            $table->unsignedBigInteger('club_1_id');
+            $table->unsignedBigInteger('club_2_id');
             $table->timestamps();
 
             // Foreign key constraints 
-            $table->foreign('mitra_uuid')->references('uuid')->on('mitra')->onDelete('cascade');
-            $table->foreign('club_1_uuid')->references('uuid')->on('club')->onDelete('cascade');
-            $table->foreign('club_2_uuid')->references('uuid')->on('club')->onDelete('cascade');
+            $table->foreign('mitra_id')->references('id')->on('mitra')->onDelete('cascade');
+            $table->foreign('club_1_id')->references('id')->on('clubs')->onDelete('cascade');
+            $table->foreign('club_2_id')->references('id')->on('clubs')->onDelete('cascade');
         });
     }
 

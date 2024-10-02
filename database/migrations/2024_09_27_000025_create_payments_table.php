@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('payments', function (Blueprint $table) {
-            $table->binary('uuid', 36)->primary();
+            $table->id();
             $table->string('reference');
             $table->string('reff_id');
             $table->enum('status', ['unpaid', 'paid'])->default('unpaid');
