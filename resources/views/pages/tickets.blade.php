@@ -76,7 +76,8 @@
                                                 <td class="col-lg-2">
                                                     <div class="d-flex align-items-center">
                                                         <div class="media-body ms-3">
-                                                            <h6 class="mb-0">{{ $match->date }}</h6>
+                                                            <h6 class="mb-0">{{ $match->date }} <br> {{ $match->time }}
+                                                            </h6>
                                                         </div>
                                                     </div>
                                                 </td>
