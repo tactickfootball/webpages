@@ -16,6 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('role_id'); // Default role is customer
             $table->date('registration_date');
             $table->integer('nik');
+            $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->integer('number');
