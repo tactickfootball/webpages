@@ -9,21 +9,36 @@ Route::get('/coming-soon', function () {
     return view('pages.coming-soon');
 })->name('coming-soon');
 
-Route::get('/login', function () {
-    return view('auth.login');
-});
+Route::get('/ticket-detail', [TicketController::class, 'showDetail'])->name('ticket-detail');
 
-Route::get('/register', function () {
-    return view('auth.register');
-});
+Route::get('/payment-method', function () {
+    return view('pages.payment-method');
+})->name('payment-method');
 
-Route::get('/matches', function () {
-    return view('pages.matches');
-})->name('matches');
+Route::get('/faqs', function () {
+    return view('pages.faqs');
+})->name('faqs');
 
-Route::get('/match-detail', function () {
-    return view('pages.match-detail');
-})->name('match-detail');
+Route::get('/privacy-policy', function () {
+    return view('pages.privacy-policy');
+})->name('privacy-policy');
+
+
+// Route::get('/login', function () {
+//     return view('auth.login');
+// });
+
+// Route::get('/register', function () {
+//     return view('auth.register');
+// });
+
+// Route::get('/matches', function () {
+//     return view('pages.matches');
+// })->name('matches');
+
+// Route::get('/match-detail', function () {
+//     return view('pages.match-detail');
+// })->name('match-detail');
 
 // Route::get('/live-score', function () {
 //     return view('pages.live-score');
@@ -33,9 +48,9 @@ Route::get('/match-detail', function () {
 //     return view('pages.statistics');
 // })->name('statistics');
 
-Route::get('/profile', function () {
-    return view('pages.profile');
-})->name('profile');
+// Route::get('/profile', function () {
+//     return view('pages.profile');
+// })->name('profile');
 
 // Route::get('/favorite', function () {
 //     return view('pages.favorite');
@@ -53,15 +68,9 @@ Route::get('/profile', function () {
 //     return view('pages.tickets');
 // })->name('tickets');
 
-Route::get('/ticket-detail', [TicketController::class, 'showDetail'])->name('ticket-detail');
-
-Route::get('/payment-method', function () {
-    return view('pages.payment-method');
-})->name('payment-method');
-
-Route::get('/ticket/buy', function () {
-    return view('pages.ticket-buy');
-})->name('ticket-buy');
+// Route::get('/ticket/buy', function () {
+//     return view('pages.ticket-buy');
+// })->name('ticket-buy');
 
 // Route::get('/video', function () {
 //     return view('pages.video');
@@ -87,26 +96,21 @@ Route::get('/ticket/buy', function () {
 //     return view('pages.ai');
 // })->name('ai');
 
-Route::get('/setting', function () {
-    return view('pages.setting');
-})->name('setting');
+// Route::get('/setting', function () {
+//     return view('pages.setting');
+// })->name('setting');
 
-Route::get('/user/personal-data', function () {
-    return view('pages.personal-data');
-})->name('personal-data');
+// Route::get('/user/personal-data', function () {
+//     return view('pages.personal-data');
+// })->name('personal-data');
 
-Route::get('/user/payment', function () {
-    return view('pages.payment');
-})->name('payment');
+// Route::get('/user/payment', function () {
+//     return view('pages.payment');
+// })->name('payment');
 
-Route::get('/faqs', function () {
-    return view('pages.faqs');
-})->name('faqs');
-
-Route::get('/privacy-policy', function () {
-    return view('pages.privacy-policy');
-})->name('privacy-policy');
-
+// Route::get('/user/invoice', function () {
+//     return view('pages.invoice');
+// })->name('invoice');
 
 // Route::get('/groups', function () {
 //     return view('pages.groups');
@@ -115,7 +119,3 @@ Route::get('/privacy-policy', function () {
 // Route::get('/group-detail', function () {
 //     return view('pages.group-detail');
 // })->name('group-detail');
-
-Route::get('/user/invoice', function () {
-    return view('pages.invoice');
-})->name('invoice');
