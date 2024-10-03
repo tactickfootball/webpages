@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/libs.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/socialv.css?v=4.0.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/remixicon/fonts/remixicon.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/vanillajs-datepicker/dist/css/datepicker.min.css') }}">
