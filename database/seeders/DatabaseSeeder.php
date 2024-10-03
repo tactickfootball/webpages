@@ -13,6 +13,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call([
+            ClubsTableSeeder::class,
+            MitraTableSeeder::class,
+            MatchesTableSeeder::class,
+            SeatsTableSeeder::class,
+        ]);
         // User::factory(10)->create();
 
         // User::factory()->create([
