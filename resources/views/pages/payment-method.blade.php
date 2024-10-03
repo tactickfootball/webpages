@@ -1,6 +1,6 @@
 @extends('layouts.app-plain')
 
-@section('title', 'TacTick - Payment Method')
+@section('title', 'Metode Pembayaran - Tactick')
 
 @section('content')
     <!-- Page Content  -->

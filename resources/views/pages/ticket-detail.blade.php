@@ -1,6 +1,6 @@
 @extends('layouts.app-plain')
 
-@section('title', 'TacTick - Detail Ticket')
+@section('title', 'Detail Ticket - Tactick')
 
 @section('content')
     <!-- Page Content  -->
