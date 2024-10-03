@@ -31,8 +31,8 @@
                             <div class="row mb-3">
                                 <label for="nomor_hp" class="col-sm-2 col-form-label">Nomor HP</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="nomor_hp"
-                                        placeholder="xxxx-xxx-xxxx-xxxx" value="">
+                                    <input type="text" class="form-control" id="nomor_hp" placeholder="62xxx-xxxx-xxxx"
+                                        value="">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -94,17 +94,38 @@
                             </div>
 
                             <script>
-                                document.getElementById('minus-btn').addEventListener('click', function() {
-                                    var qtyInput = document.getElementById('ticket_quantity');
-                                    var currentValue = parseInt(qtyInput.value);
-                                    if (currentValue > 1) {
-                                        qtyInput.value = currentValue - 1;
-                                    }
-                                });
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    const minusBtn = document.getElementById('minus-btn');
+                                    const plusBtn = document.getElementById('plus-btn');
+                                    const ticketQuantity = document.getElementById('ticket_quantity');
+                                    const detailTiket2 = document.getElementById('detail-tiket-2-card')
 
-                                document.getElementById('plus-btn').addEventListener('click', function() {
-                                    var qtyInput = document.getElementById('ticket_quantity');
-                                    qtyInput.value = parseInt(qtyInput.value) + 1;
+                                    function toggleDetailTiket2() {
+                                        if (ticketQuantity.value == '2') {
+                                            detailTiket2.style.display = 'block';
+                                        } else {
+                                            detailTiket2.style.display = 'none';
+                                        }
+                                    }
+
+                                    minusBtn.addEventListener('click', function() {
+                                        let currentValue = parseInt(ticketQuantity.value);
+                                        if (currentValue > 1) {
+                                            ticketQuantity.value = currentValue - 1;
+                                            toggleDetailTiket2();
+                                        }
+                                    });
+
+                                    plusBtn.addEventListener('click', function() {
+                                        let currentValue = parseInt(ticketQuantity.value);
+                                        if (currentValue < 2) {
+                                            ticketQuantity.value = currentValue + 1;
+                                            toggleDetailTiket2();
+                                        }
+                                    });
+
+                                    // Inital check
+                                    toggleDetailTiket2();
                                 });
                             </script>
                         </div>
@@ -132,7 +153,7 @@
                                         <label for="nomor_hp" class="col-sm-2 col-form-label">No. Hp</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="nomor_hp"
-                                                placeholder="xxxx-xxx-xxxx-xxxx" value="">
+                                                placeholder="62xxx-xxxx-xxxx" value="">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -168,7 +189,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="card">
+                            <div class="card" id="detail-tiket-2-card">
                                 <div class="card-body">
                                     <h4 class="card-title">Detail Tiket 2</h4>
                                     <div class="row mb-3">
@@ -189,7 +210,7 @@
                                         <label for="nomor_hp" class="col-sm-2 col-form-label">No. Hp</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="nomor_hp"
-                                                placeholder="xxxx-xxx-xxxx-xxxx" value="">
+                                                placeholder="62xxx-xxxx-xxxx" value="">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -228,9 +249,9 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Total Pembayaran</h4>
-                                <div class="col-sm-6 text-start">
-                                    <h2>Rp 100.000</h2>
-                                </div>
+                            <div class="col-sm-6 text-start">
+                                <h2>Rp 100.000</h2>
+                            </div>
                         </div>
                     </div>
                     <div class="row mb-3">
