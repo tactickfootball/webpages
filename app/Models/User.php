@@ -51,32 +51,10 @@ class User extends Authenticatable
         parent::boot();
 
         // Automatically generate a UUID when creating a new record
-        static::creating(function ($model) {
-            if (empty($model->uuid)) {
-                $model->uuid = Uuid::uuid4()->getBytes();
-            }
-        });
-    }
-
-    /**
-     * Get the UUID attribute.
-     *
-     * @param  string  $value
-     * @return string
-     */
-    public function getUuidAttribute($value)
-    {
-        return Uuid::fromBytes($value)->toString();
-    }
-
-    /**
-     * Set the UUID attribute.
-     *
-     * @param  string  $value
-     * @return void
-     */
-    public function setUuidAttribute($value)
-    {
-        $this->attributes['uuid'] = Uuid::fromString($value)->getBytes();
+        // static::creating(function ($model) {
+        //     if (empty($model->uuid)) {
+        //         $model->uuid = Uuid::uuid4()->getBytes();
+        //     }
+        // });
     }
 }
