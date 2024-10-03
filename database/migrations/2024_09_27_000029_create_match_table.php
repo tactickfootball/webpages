@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 100);
             $table->date('date');
+            $table->time('time');
             $table->integer('total_available_ticket');
             $table->string('description', 255);
             $table->unsignedBigInteger('mitra_id');
