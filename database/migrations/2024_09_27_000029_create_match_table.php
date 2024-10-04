@@ -16,8 +16,10 @@ return new class extends Migration
             $table->string('name', 100);
             $table->date('date');
             $table->time('time');
+            $table->string('venue', 100);
             $table->integer('total_available_ticket');
-            $table->string('description', 255);
+            $table->string('description', 150);
+            $table->text('desc_detail');
             $table->unsignedBigInteger('mitra_id');
             $table->unsignedBigInteger('club_1_id');
             $table->unsignedBigInteger('club_2_id');
