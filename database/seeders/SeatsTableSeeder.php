@@ -24,11 +24,11 @@ class SeatsTableSeeder extends Seeder
             ],
             [
                 'name' => 'Tribun Barat',
-                'price' => 25000,
+                'price' => 50000,
             ],
             [
                 'name' => 'Tribun Timur',
-                'price' => 25000,
+                'price' => 50000,
             ],
         ]);
     }
