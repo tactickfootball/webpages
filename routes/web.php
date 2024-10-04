@@ -15,6 +15,10 @@ Route::get('/payment-method', function () {
     return view('pages.payment-method');
 })->name('payment-method');
 
+Route::get('/description-ticket', function () {
+    return view('pages.description-ticket');
+})->name('description-ticket');
+
 Route::get('/faqs', function () {
     return view('pages.faqs');
 })->name('faqs');
