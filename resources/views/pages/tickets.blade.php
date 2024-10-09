@@ -8,6 +8,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    @include('partials.breadcrumb')
+                </div>
+                <div class="col-lg-12">
                     <div class="card">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
@@ -97,7 +100,9 @@
                                                     </div>
                                                 </td>
                                                 <td class="col-lg-2">
-                                                    <a href="{{ route('ticket-detail') }}" class="btn btn-primary">Buy</a>
+                                                    {{-- <a href="{{ route('ticket-detail') }}" class="btn btn-primary">Buy</a> --}}
+                                                    <a href="{{ route('match-detail', ['id' => $match->id]) }}"
+                                                        class="btn btn-primary">View</a>
                                                 </td>
                                             </tr>
                                         @endforeach

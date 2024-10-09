@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DetailMatchController;
 use App\Http\Controllers\TicketController;
+use App\Http\Controllers\TokopayController;
+use App\Http\Controllers\PaymentController;
 
 Route::get('/', [TicketController::class, 'showTickets'])->name('index');
 
@@ -9,7 +12,9 @@ Route::get('/coming-soon', function () {
     return view('pages.coming-soon');
 })->name('coming-soon');
 
-Route::get('/ticket-detail', [TicketController::class, 'showDetail'])->name('ticket-detail');
+Route::get('/match/{id}', [DetailMatchController::class, 'showDetailMatches'])->name('match-detail');
+
+Route::get('/ticket-detail/{id}', [TicketController::class, 'showDetail'])->name('ticket-detail');
 
 Route::get('/payment-method', function () {
     return view('pages.payment-method');
@@ -18,6 +23,10 @@ Route::get('/payment-method', function () {
 Route::get('/description-ticket', function () {
     return view('pages.description-ticket');
 })->name('description-ticket');
+
+// Route::post('/order', [TokopayController::class, 'createOrder'])->name('order');
+
+// Route::get('/payment/{trx_id}', [PaymentController::class, 'showPayment'])->name('payment');
 
 Route::get('/faqs', function () {
     return view('pages.faqs');
@@ -108,9 +117,6 @@ Route::get('/privacy-policy', function () {
 //     return view('pages.personal-data');
 // })->name('personal-data');
 
-// Route::get('/user/payment', function () {
-//     return view('pages.payment');
-// })->name('payment');
 
 // Route::get('/user/invoice', function () {
 //     return view('pages.invoice');
