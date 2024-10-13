@@ -5847,7 +5847,7 @@ fieldset:disabled .btn {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 0.75rem 0.75rem
+    padding: 1.5rem 1.5rem
 }
 
 .card-title {
