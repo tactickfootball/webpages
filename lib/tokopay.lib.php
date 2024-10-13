@@ -7,7 +7,7 @@ class Tokopay
 
     public function __construct($merchantId, $secretKey)
     {
-        $this->merchantId = env('TOKOPAY_SECRET_KEY', '');
+        $this->merchantId = env('TOKOPAY_MERCHANT_ID', '');
         $this->secretKey = env('TOKOPAY_SECRET_KEY', '');
     }
 
