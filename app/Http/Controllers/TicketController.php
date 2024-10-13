@@ -33,7 +33,7 @@ class TicketController extends Controller
         $breadcrumbs = [
             ['name' => 'Beranda', 'url' => route('index')],
             ['name' => $matches->name, 'url' => route('match-detail', ['id' => $matches->id])],
-            ['name' => 'Buy', 'url' => url()->current()],
+            ['name' => 'Pembayaran', 'url' => url()->current()],
         ];
 
         return view('pages.ticket-detail', compact('breadcrumbs', 'match_detail', 'matches', 'getTicketTypes'));
