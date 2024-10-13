@@ -3,10 +3,10 @@
         <nav class="navbar navbar-expand-lg navbar-light p-0">
             <div class="iq-navbar-logo d-flex justify-content-between">
                 <a href="{{ route('index') }}">
-                    <img src="../assets/images/logo.png" class="img-fluid" alt="">
-                <div class="align-self-center">
-                    <h4>TacTick</h4>
-                </div>
+                    <img src="{{ asset('assets/images/logo.png') }}" class="img-fluid" alt="">
+                    <div class="align-self-center">
+                        <h4>TacTick</h4>
+                    </div>
                 </a>
             </div>
             {{-- <div class="collapse navbar-collapse" id="navbarNav">

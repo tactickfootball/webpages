@@ -8,7 +8,7 @@
                     </div>
                 </div>
                 <a href="{{ route('index') }}">
-                    <img src="../assets/images/logo.png" class="img-fluid" alt="">
+                    <img src="{{ asset('assets/images/logo.png') }}" class="img-fluid" alt="">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">

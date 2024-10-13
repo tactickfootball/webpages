@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}"> --}}
 
     <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/libs.min.css') }}">
@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/remixicon/fonts/remixicon.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/vanillajs-datepicker/dist/css/datepicker.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome-line-awesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css') }}">
+
+    @stack('styles')
 </head>
 
 <body class="  ">
@@ -46,20 +47,22 @@
 
     {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/libs.min.js"></script>
+    <script src="{{ asset('assets/js/libs.min.js') }}"></script>
     <!-- slider JavaScript -->
-    <script src="../assets/js/slider.js"></script>
+    <script src="{{ asset('assets/js/slider.js') }}"></script>
     <!-- masonry JavaScript -->
-    <script src="../assets/js/masonry.pkgd.min.js"></script>
+    <script src="{{ asset('assets/js/masonry.pkgd.min.js') }}"></script>
     <!-- SweetAlert JavaScript -->
-    <script src="../assets/js/enchanter.js"></script>
+    <script src="{{ asset('assets/js/enchanter.js') }}"></script>
     <!-- SweetAlert JavaScript -->
-    <script src="../assets/js/sweetalert.js"></script>
+    <script src="{{ asset('assets/js/sweetalert.js') }}"></script>
     <!-- app JavaScript -->
-    <script src="../assets/js/charts/weather-chart.js"></script>
-    <script src="../assets/js/app.js"></script>
-    <script src="../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
-    <script src="../assets/js/lottie.js"></script>
+    <script src="{{ asset('assets/js/charts/weather-chart.js') }}"></script>
+    <script src="{{ asset('assets/js/app.js') }}"></script>
+    <script src="{{ asset('assets/vendor/vanillajs-datepicker/dist/js/datepicker.min.js') }}"></script>
+    <script src="{{ asset('assets/js/lottie.js') }}"></script>
+
+    @stack('scripts')
 
     <!-- offcanvas start -->
 
@@ -72,27 +75,27 @@
         <div class="offcanvas-body small">
             <div class="d-flex flex-wrap align-items-center">
                 <div class="text-center me-3 mb-3">
-                    <img src="../assets/images/icon/08.png" class="img-fluid rounded mb-2" alt="">
+                    <img src="{{ asset('assets/images/icon/08.png') }}" class="img-fluid rounded mb-2" alt="">
                     <h6>Facebook</h6>
                 </div>
                 <div class="text-center me-3 mb-3">
-                    <img src="../assets/images/icon/09.png" class="img-fluid rounded mb-2" alt="">
+                    <img src="{{ asset('assets/images/icon/09.png') }}" class="img-fluid rounded mb-2" alt="">
                     <h6>Twitter</h6>
                 </div>
                 <div class="text-center me-3 mb-3">
-                    <img src="../assets/images/icon/10.png" class="img-fluid rounded mb-2" alt="">
+                    <img src="{{ asset('assets/images/icon/10.png') }}" class="img-fluid rounded mb-2" alt="">
                     <h6>Instagram</h6>
                 </div>
                 <div class="text-center me-3 mb-3">
-                    <img src="../assets/images/icon/11.png" class="img-fluid rounded mb-2" alt="">
+                    <img src="{{ asset('assets/images/icon/11.png') }}" class="img-fluid rounded mb-2" alt="">
                     <h6>Google Plus</h6>
                 </div>
                 <div class="text-center me-3 mb-3">
-                    <img src="../assets/images/icon/13.png" class="img-fluid rounded mb-2" alt="">
+                    <img src="{{ asset('assets/images/icon/13.png') }}" class="img-fluid rounded mb-2" alt="">
                     <h6>In</h6>
                 </div>
                 <div class="text-center me-3 mb-3">
-                    <img src="../assets/images/icon/12.png" class="img-fluid rounded mb-2" alt="">
+                    <img src="{{ asset('assets/images/icon/12.png') }}" class="img-fluid rounded mb-2" alt="">
                     <h6>YouTube</h6>
                 </div>
             </div>
