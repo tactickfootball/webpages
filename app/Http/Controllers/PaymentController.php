@@ -57,16 +57,17 @@ class PaymentController extends Controller
             $writer = new PngWriter();
             $qrCodeImage = $writer->write($qrCode);
 
+            // del this
             // Decrypt the data and validate HMAC
-            $qrCodeImagePath = 'assets/images/download.png';
-            $qrReader = new QrReader($qrCodeImagePath);
-            $scannedData = $qrReader->text();  // Extract the text from the QR code (this is the encrypted data)
-            if ($scannedData !== null) {
-                // Decrypt the scanned data
-                $decryptedData = $this->decryptWithHMAC($scannedData);
-            } else {
-                echo 'Could not decode QR code.';
-            }
+            // $qrCodeImagePath = 'assets/images/download.png';
+            // $qrReader = new QrReader($qrCodeImagePath);
+            // $scannedData = $qrReader->text();  // Extract the text from the QR code (this is the encrypted data)
+            // if ($scannedData !== null) {
+            //     // Decrypt the scanned data
+            //     $decryptedData = $this->decryptWithHMAC($scannedData);
+            // } else {
+            //     echo 'Could not decode QR code.';
+            // }
         }
 
         // Return the view with the QR code
