@@ -23,7 +23,7 @@ class TokopayService
             'merchant_id' => $this->merchant_id,
             'kode_channel' => $channel,
             'reff_id' => $ref_id,
-            'amount' => $amount,
+            'amount' => intval($amount),
             'customer_name' => $customer_name,
             'customer_email' => $customer_email,
             'customer_phone' => $customer_phone,
