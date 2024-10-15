@@ -22,7 +22,7 @@
             </div>
         </div>
         <td class="col-lg-2">
-            <a href="{{ route('ticket-detail', ['id' => $match->id]) }}" class="btn btn-primary">Pesan Sekarang</a>
+            <a href="{{ route('ticket.detail', ['id' => $match->id]) }}" class="btn btn-primary">Pesan Sekarang</a>
         </td>
     </div>
 @endsection

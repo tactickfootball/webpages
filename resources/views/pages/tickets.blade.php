@@ -99,8 +99,8 @@
                                                 </div>
                                             </td>
                                             <td class="col-lg-2">
-                                                {{-- <a href="{{ route('ticket-detail') }}" class="btn btn-primary">Buy</a> --}}
-                                                <a href="{{ route('match-detail', ['id' => $match->id]) }}"
+                                                {{-- <a href="{{ route('ticket.detail') }}" class="btn btn-primary">Buy</a> --}}
+                                                <a href="{{ route('match.detail', ['id' => $match->id]) }}"
                                                     class="btn btn-primary">View</a>
                                             </td>
                                         </tr>

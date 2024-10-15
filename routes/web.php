@@ -6,15 +6,23 @@ use App\Http\Controllers\TicketController;
 use App\Http\Controllers\TokopayController;
 use App\Http\Controllers\PaymentController;
 
-Route::get('/', [TicketController::class, 'showTickets'])->name('index');
-
 Route::get('/coming-soon', function () {
     return view('pages.coming-soon');
 })->name('coming-soon');
 
-Route::get('/match/{id}', [DetailMatchController::class, 'showDetailMatches'])->name('match-detail');
+Route::get('/', [TicketController::class, 'showTickets'])->name('index');
 
-Route::get('/ticket-detail/{id}', [TicketController::class, 'showDetail'])->name('ticket-detail');
+Route::get('/tiket/detail-pertandingan/{id}', [DetailMatchController::class, 'showDetailMatches'])->name('match.detail');
+
+Route::post('/tiket/bayar', [TicketController::class, 'storeTicket'])->name('ticket.store');
+
+Route::get('/tiket/detail/{id}', [TicketController::class, 'showDetail'])->name('ticket.detail');
+
+Route::get('/transaksi/{ref_id}', [PaymentController::class, 'handlePaymentSuccess'])->name('payment.success');
+
+// del this
+// Route::get('/ticket-details/{id}', [TicketController::class, 'showDetails'])->name('ticket-details');
+// Route::post('/ticket-info', [TicketController::class, 'storeTicketInfo'])->name('ticket.info.store');
 
 Route::get('/payment-method', function () {
     return view('pages.payment-method');
@@ -36,6 +44,13 @@ Route::get('/privacy-policy', function () {
     return view('pages.privacy-policy');
 })->name('privacy-policy');
 
+// Step 4: Middleware
+// Ensure that your routes are protected by the auth middleware if they require authentication.
+
+// Route::group(['middleware' => ['auth']], function () {
+//     // Protected routes
+//     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+// });
 
 // Route::get('/login', function () {
 //     return view('auth.login');
