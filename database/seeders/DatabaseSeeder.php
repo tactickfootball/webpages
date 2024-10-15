@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             MitraTableSeeder::class,
             MatchesTableSeeder::class,
             SeatsTableSeeder::class,
+            RolesTableSeeder::class,
         ]);
         // User::factory(10)->create();
 
