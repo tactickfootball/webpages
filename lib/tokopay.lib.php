@@ -1,4 +1,7 @@
 <?php
+
+use Illuminate\Support\Facades\Log;
+
 class Tokopay
 {
     public $merchantId = 'YOUR_MERCHANT_ID';
@@ -42,6 +45,14 @@ class Tokopay
 
     public function createAdvanceOrder($data = [])
     {
+        // Log::info('cURL Request:', [
+        //     'URL' => $this->apiUrl . '/v1/order',
+        //     'Headers' => [
+        //         'Content-Type: application/json'
+        //     ],
+        //     'Data' => $data
+        // ]);
+
         $curl = curl_init();
         curl_setopt_array($curl, array(
             CURLOPT_URL => $this->apiUrl . '/v1/order',
@@ -57,8 +68,18 @@ class Tokopay
                 'Content-Type: application/json'
             ),
         ));
+
         $response = curl_exec($curl);
+        $err = curl_error($curl);
+
         curl_close($curl);
+
+
+        if ($err) {
+            Log::error('cURL Error:', ['error' => $err]);
+        } else {
+            Log::info('cURL Response:', ['response' => $response]);
+        }
         return $response;
     }
 }
